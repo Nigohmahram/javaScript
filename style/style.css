@@ -1,14 +1,329 @@
-/* FONTS  */
+/* .app {
+     position: absolute;
+     left: 30%;
+     transform: rotateX(-50%);
+     text-align: center;
+   }
+   .box {
+     width: 150px;
+     height: 150px;
+     background-color: rgb(61, 89, 214);
+     margin: 0 auto;
+   }
+   button {
+     width: 80px;
+     height: 50px;
+     margin-top: 10px;
+     border: none;
+     border-radius: 8px;
+     background-color: rgb(61, 58, 77);
+     color: #fff;
+     cursor: pointer;
+     outline: none;
+     position: relative;
+   }
+   .circle__wrapper {
+     display: flex;
+     position: relative;
+     margin-top: 10px;
+   }
+   .circle {
+     width: 80px;
+     height: 80px;
+     background-color: rgb(48, 48, 99);
+     margin-top: 10px;
+     border-radius: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     font-weight: bold;
+     font-size: 25px;
+     margin: 0 10px;
+   }
+   .wrapper {
+     position: relative;
+   }
+   .heart {
+     display: inline-block;
+     position: relative;
+     width: 100px;
+     height: 90px;
+     margin-top: 10px;
+   }
+   .heart:before,
+   .heart:after {
+     position: absolute;
+     content: '';
+     left: 50px;
+     top: 0;
+     width: 50px;
+     height: 80px;
+     background: red;
+     -moz-border-radius: 50px 50px 0 0;
+     border-radius: 50px 50px 0 0;
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);
+     -o-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+     -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+     -ms-transform-origin: 0 100%;
+     -o-transform-origin: 0 100%;
+     transform-origin: 0 100%;
+   }
+   .heart:after {
+     left: 0;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+     -webkit-transform-origin: 100% 100%;
+     -moz-transform-origin: 100% 100%;
+     -ms-transform-origin: 100% 100%;
+     -o-transform-origin: 100% 100%;
+     transform-origin: 100% 100%;
+   }
+   .black {
+     width: 150px;
+     height: 50px;
+     line-height: 50px;
+     text-align: center;
+     background-color: black;
+     margin-bottom: 30px;
+     margin-top: 30px;
+     color: #fff;
+   } */
+                                                     /* 29------    DARS VAZUFA */
+                                                     * {
+                                                       -webkit-box-sizing: border-box;
+                                                       box-sizing: border-box;
+                                                       margin: 0;
+                                                       padding: 0;
+                                                       font-family: "Roboto", sans-serif;
+                                                     }
+                                                     .promo {
+                                                       height: 780px;
+                                                       display: -webkit-box;
+                                                       display: -ms-flexbox;
+                                                       display: flex;
+                                                     }
+                                                     .promo__content {
+                                                       width: 100%;
+                                                     }
+                                                     .promo__bg {
+                                                       height: 60vh;
+                                                       background: url("../img/2.jpg") center center/cover no-repeat;
+                                                       background-position: bottom;
+                                                       padding: 107px 0 0 61px;
+                                                     }
+                                                     .promo__genre {
+                                                       font-weight: bold;
+                                                       font-size: 18px;
+                                                       line-height: 21px;
+                                                       color: #ffffff;
+                                                       text-transform: uppercase;
+                                                     }
+                                                     .promo__title {
+                                                       font-weight: bold;
+                                                       font-size: 48px;
+                                                       line-height: 56px;
+                                                       color: #ffffff;
+                                                       text-transform: uppercase;
+                                                     }
+                                                     .promo__descr {
+                                                       width: 481px;
+                                                       font-weight: bold;
+                                                       font-size: 18px;
+                                                       line-height: 21px;
+                                                       color: #ffffff;
+                                                       text-transform: uppercase;
+                                                     }
+                                                     .promo__ratings {
+                                                       margin-top: 13px;
+                                                     }
+                                                     .promo__ratings span {
+                                                       font-weight: bold;
+                                                       font-size: 18px;
+                                                       line-height: 21px;
+                                                       color: #f64c72;
+                                                       margin-right: 25px;
+                                                     }
+                                                     .promo__interactive {
+                                                       display: -webkit-box;
+                                                       display: -ms-flexbox;
+                                                       display: flex;
+                                                     }
+                                                     .promo__interactive > div {
+                                                       width: 50%;
+                                                       padding: 30px 0 0 60px;
+                                                     }
+                                                     .promo__interactive-title {
+                                                       display: inline-block;
+                                                       font-weight: bold;
+                                                       font-size: 24px;
+                                                       line-height: 28px;
+                                                       color: #000000;
+                                                     }
+                                                     .promo__interactive-title:after {
+                                                       content: "";
+                                                       display: block;
+                                                       width: 33%;
+                                                       height: 2px;
+                                                       background-color: #000;
+                                                     }
+                                                     .promo__interactive-list {
+                                                       list-style-type: none;
+                                                       margin-top: 35px;
+                                                       display: -webkit-box;
+                                                       display: -ms-flexbox;
+                                                       display: flex;
+                                                       -webkit-box-orient: vertical;
+                                                       -webkit-box-direction: normal;
+                                                       -ms-flex-direction: column;
+                                                       flex-direction: column;
+                                                       -webkit-box-align: start;
+                                                       -ms-flex-align: start;
+                                                       align-items: flex-start;
+                                                     }
+                                                     .promo__interactive-item {
+                                                       display: inline-block;
+                                                       position: relative;
+                                                       font-weight: 300;
+                                                       font-size: 20px;
+                                                       line-height: 18px;
+                                                       color: #000000;
+                                                       margin-bottom: 15px;
+                                                       padding-right: 40px;
+                                                       text-transform: uppercase;
+                                                     }
+                                                     .promo__interactive-item span {
+                                                       display: block;
+                                                       position: absolute;
+                                                       left: -30px;
+                                                       top: 50%;
+                                                       -webkit-transform: translateY(-50%);
+                                                       transform: translateY(-50%);
+                                                       width: 20px;
+                                                       height: 20px;
+                                                       background: url("../icons/Star.svg") center center/cover no-repeat;
+                                                     }
+                                                     .promo__interactive-item:before {
+                                                       content: "";
+                                                       position: absolute;
+                                                       bottom: -5px;
+                                                       display: block;
+                                                       width: calc(100% - 40px);
+                                                       height: 2px;
+                                                       background-color: #553d67;
+                                                     }
+                                                     .promo__interactive-item:hover .delete {
+                                                       content: "";
+                                                       display: block;
+                                                       position: absolute;
+                                                       right: 0px;
+                                                       top: 50%;
+                                                       -webkit-transform: translateY(-50%);
+                                                       transform: translateY(-50%);
+                                                       width: 20px;
+                                                       height: 20px;
+                                                       background: url("../icons/trash.png") center center/cover no-repeat;
+                                                       cursor: pointer;
+                                                     }
+                                                     .promo__interactive .add .promo__interactive-title {
+                                                       margin-bottom: 25px;
+                                                     }
+                                                     .promo__interactive .add span {
+                                                       display: block;
+                                                       margin: 10px 0;
+                                                       font-weight: bold;
+                                                       font-size: 16px;
+                                                       line-height: 16px;
+                                                       color: #000000;
+                                                     }
+                                                     .promo__interactive .add .yes {
+                                                       display: inline;
+                                                       margin-left: 10px;
+                                                     }
+                                                     .promo__interactive .add input[type="text"] {
+                                                       width: 270px;
+                                                       height: 45px;
+                                                       line-height: 50px;
+                                                       font-size: 16px;
+                                                       background: rgba(196, 196, 196, 0.29);
+                                                       border: 1px solid rgba(0, 0, 0, 0.19);
+                                                       padding: 0 15px;
+                                                       outline: none;
+                                                       border-radius: 4px;
+                                                     }
+                                                     .promo__interactive .add input[type="text"]::-webkit-input-placeholder {
+                                                       font-weight: 300;
+                                                       font-size: 16px;
+                                                       color: rgba(0, 0, 0, 0.53);
+                                                     }
+                                                     .promo__interactive .add input[type="text"]:-ms-input-placeholder {
+                                                       font-weight: 300;
+                                                       font-size: 16px;
+                                                       color: rgba(0, 0, 0, 0.53);
+                                                     }
+                                                     .promo__interactive .add input[type="text"]::-ms-input-placeholder {
+                                                       font-weight: 300;
+                                                       font-size: 16px;
+                                                       color: rgba(0, 0, 0, 0.53);
+                                                     }
+                                                     .promo__interactive .add input[type="text"]::placeholder {
+                                                       font-weight: 300;
+                                                       font-size: 16px;
+                                                       color: rgba(0, 0, 0, 0.53);
+                                                     }
+                                                     .promo__interactive .add button {
+                                                       display: block;
+                                                       margin-top: 15px;
+                                                       width: 170px;
+                                                       height: 45px;
+                                                       background: #553d67;
+                                                       font-weight: bold;
+                                                       font-size: 14px;
+                                                       line-height: 14px;
+                                                       color: #ffffff;
+                                                       border: none;
+                                                       outline: none;
+                                                       cursor: pointer;
+                                                     }
+                                                     .promo__interactive .add button:active {
+                                                       transform: scale(0.95);
+                                                     }
+                                                     .promo__adv {
+                                                       padding: 0 10px;
+                                                       width: 300px;
+                                                       height: 100%;
+                                                     }
+                                                     .promo__adv-title {
+                                                       font-weight: bold;
+                                                       font-size: 18px;
+                                                       line-height: 21px;
+                                                       color: #553d67;
+                                                       margin: 20px 0;
+                                                       text-align: center;
+                                                     }
+                                                     .promo__adv img {
+                                                       width: 100%;
+                                                       margin-bottom: 10px;
+                                                     }
+                                                     /* SHUYERGACHA */
+* /* /* FONTS  */
 /* ROOT  */
 /* GLOBALL */
 
-html {
+/* html {
      height: 100%;
      box-sizing: border-box;
-     scroll-behavior: smooth;
 }
+*/
 
-*,
+/* *,
 *::before,
 *::after {
      box-sizing: border-box;
@@ -42,13 +357,13 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-     border-color: transparent;
+     /* border-color: transparent;
      -webkit-text-fill-color: inherit;
      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-}
+} */
 
 /* PLACEHOLDER-STYLES */
-::-webkit-input-placeholder,
+/* ::-webkit-input-placeholder,
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
@@ -65,13 +380,13 @@ select:-webkit-autofill:focus {
      padding: 0;
      clip: rect(0 0 0 0);
      overflow: hidden;
-}
+} */
 
 /* CONTAINER  */
 
-.container {
-     width: 100%;
-     max-width: 1200px;
+/* .container { */
+     /* width: 100%;
+     max-width: 1220px;
      padding-left: 50px;
      padding-right: 50px;
      margin-left: auto;
@@ -81,8 +396,214 @@ select:-webkit-autofill:focus {
 .main-content {
      flex-grow: 1;
 }
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: consolas;
+}
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     overflow: hidden;
+     background: #cfd1ec;
+}
+.container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.container .box{
+     position: relative;
+     width: 480px;
+     height: 480px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.container .box::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 25px;
+     height: 100%;
+     background: linear-gradient(#fff,#fff,#e3e3e3);
+     filter: blur(1px);
+     z-index: 1;
+}
+.container .box::after{
+     content: '';
+     position: absolute;
+     top: 1px;
+     right: -1px;
+     width: 25px;
+     height: 100%;
+     background: #9d9d9d;
+     filter: blur(1px);
+     z-index: 1;
+
+
+}
+.container .box .shadow{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: #eee;
+}
+.container .box .shadow::before{
+     content:'';
+     position: absolute;
+     top: 0;
+     left: calc(100% + 193px);
+     width: 100%;
+     height: 280%;
+     background: linear-gradient(rgba(0,0,0,0.075),transparent);
+     transform: skewX(45deg);
+}
+.container .box .shadow::after{
+     content:'';
+     position: absolute;
+     bottom: -200%;
+     left: calc(100% + 0px);
+     width: 100%;
+     height: 200%;
+     background: linear-gradient(rgba(0,0,0,0.075),transparent);
+     transform: skewX(45deg);
+}
+.cover{
+     position: absolute;
+     top: 0;
+     left: -100px;
+     width: 100px;
+     height: 100px;
+     background: #cfd1e1;
+     z-index: 10;
+}
+.content{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(#dbdae1,#a3aaba);
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+     15px 15px 15px rgba(0, 0, 0, 0.1),
+     20px 10px 20px rgba(0, 0, 0, 0.1),
+     50px 50px 80px rgba(0, 0, 0, 0.25),
+     inset 3px 3px 2px #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.content .form{
+     position: relative;
+     width: 260px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.logo{
+     width: 70px;
+     height: 70px;
+     background: #444;
+     color: #fff;
+     font-size: 1.75em;
+     margin-bottom: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+}
+.content .form h2{
+     font-size: 2em;
+     color: #444;
+     margin-bottom: 20px;
+}
+
+.content .form .inputBox{
+     position: relative;
+     width: 100%;
+     margin-top: 30px;
+}
+.content .form .inputBox input{
+     position: relative;
+     width: 100%;
+     padding: 10px 0 10px 25px;
+     font-size: 1.25em;
+     background: transparent;
+     box-shadow: none;
+     border: none;
+     border-bottom: 3px solid #444;
+     outline: none;
+     color: #444;
+}
+.content .form .inputBox i{
+     position: absolute;
+     left: 0;
+     bottom: 15px;
+     font-size: 1.25em;
+     color: #444;
+}
+.content .form .inputBox span{
+     position: absolute;
+     left: 0;
+     padding: 10px 0 10px 25px;
+     font-size: 1.25em;
+     pointer-events: none;
+     color: #444;
+     transition: 0.5s;
+}
+.content .form .inputBox input:focus ~ span,
+.content .form .inputBox input:valid ~ span{
+     transform: translateY(-20px);
+     font-size: 0.9em;
+     background: #444;
+     color: #fff;
+     padding: 2px 4px;
+}
+.content .form .links{
+     width: 100%;
+     margin-top: 15px;
+     display: flex;
+     justify-content: space-between;
+}
+.content .form .links a{
+     color: #444;
+     text-decoration: none;
+}
+.content .form .inputBox input[type="submit"]{
+     background: #444;
+     color: #fff;
+     cursor: pointer;
+     padding: 10px;
+}
+.content .form .inputBox input[type="submit"]:hover{
+     background: #333;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
