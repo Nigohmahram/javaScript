@@ -178,25 +178,25 @@ if (country > 25){
 //      startNam++;
 // } while (startNam <= 10);
 
-    /*  while (startNam <= 10) {
-          console.log(startNam);
-          startNam++;
-     } */
+/*  while (startNam <= 10) {
+      console.log(startNam);
+      startNam++;
+ } */
 
-     //do Qil // bajar degani
-     /* do{
-          console.log(startNam);
-          startNam++;
-     }while (startNam <=10); */
+//do Qil // bajar degani
+/* do{
+     console.log(startNam);
+     startNam++;
+}while (startNam <=10); */
 
-     //Third
-     /* for (let i = 1; i <= 10; i++) {
-          if (i === 8) {
-          //break; // O'zgaruvchida belgilangan sonda to'xtatadi
-          continue; // O'zgaruvchiga berilgan sonni tashlan ketdi
-          }
-          console.log(i);
-     } */
+//Third
+/* for (let i = 1; i <= 10; i++) {
+     if (i === 8) {
+     //break; // O'zgaruvchida belgilangan sonda to'xtatadi
+     continue; // O'zgaruvchiga berilgan sonni tashlan ketdi
+     }
+     console.log(i);
+} */
 
 //Third
 // for (let i = 1; i <= 8; i++){
@@ -217,83 +217,6 @@ if (country > 25){
 
 
 
-//  const seriusDB = {
-//      count: 0,
-//      serius: {},
-//      actors: {},
-//      genres: [],
-//      private: false,
-//      start: function () {
-//           seriusDB.count = +prompt("Nechta serial ko'rdingiz", "Raqam kiriting");
-
-//           while(seriusDB.count == "" ||
-//           seriusDB.count == null ||
-//           isNaN(seriusDB.count)
-//           ){
-//                seriusDB.count = prompt("Nechta serial ko'rdingiz", "");
-//                }
-//          },
-//          rememberMySerius: function (){
-//               for (let i = 0; i < 2; i++){
-//                 const a = prompt("Oxirgi ko'rgan serialingiz?"),
-//                 b = prompt("Nechi baho berasiz?");
-//                 if (a != null && b != null && a !="" && b !=""){
-//                 seriusDB.serius[a] = b;
-//                 console.log("done");
-//               }else{
-//                 console.log("error");
-//                 i--;
-//               }
-//            }
-//          },
-//          detectLevelSerius: function(){
-//           if (seriusDB.count < 5) {
-//                console.log("Kam serial ko'ribsiz");
-//           } else if (seriusDB.count >= 5 && seriusDB.count < 10) {
-//                console.log("Siz classik tomoshabin ekansiz");
-//                } else if (seriusDB.count >=10) {
-//      console.log("Siz serialchi zvezda keansiz");
-//      }else {
-//      console.log("Error");
-//           }
-//      },
-//       showDb: function(){
-//           if(!seriusDB.private){
-//                console.log(seriusDB);
-//           }
-//      },
-//       visableDb: function () {
-//           if (seriusDB.private) {
-//                seriusDB.private = false;
-//           }else {
-//                seriusDB.private = true;
-//           }
-//      },
-//       writeGenres: function(){
-//           // for (let i = 0; i <= 2; i++){
-//                // const genre = prompt (`Yaxshi ko'rgan janringiz ${i + 1}`);
-//                // if (genre == '' || genre == null) {
-//                //      console.log("Siz noto'g'ri ma'lumot kiritdingiz");
-//                //      i--;
-//                // } else{
-//                //      seriusDB.genres[i] = genre;
-//                // }ss
-//           // }
-//           let genres = prompt ("Yaxshi ko'rgan janringizni vergul yordamida yozing")
-//           .toLocaleLowerCase;
-//           console.log(genres);
-//           if (genres == '' || genres == null) {
-//                console.log("Siz noto'g'ri ma'lumot kiritdingiz");
-//                i--;
-//           } else{
-//                seriusDB.genres = genres.split(', ');
-//                seriusDB.genres.sort();
-//           }
-//           seriusDB.genres.forEach((item, idx) => {
-//                console.log(`Yaxshi ko'rgan janiringiz ${idx + 1} - nomi ${item}`);
-//           });
-//      },
-//  };
 
 
 
@@ -304,16 +227,16 @@ if (country > 25){
 
 
 
-   //#16. Funksiya,ES6
+//#16. Funksiya,ES6
 
-  /*  console.log("Hello World");
+/*  console.log("Hello World");
 
-   function calc(a, b, c, d, e, f){
-     console.log(a + b + c + d + e + f);
-     console.log(a - b - c - d - e - f);
-     console.log(a + b * c * d * e * f);
-   }
-   calc(1, 2); */
+ function calc(a, b, c, d, e, f){
+   console.log(a + b + c + d + e + f);
+   console.log(a - b - c - d - e - f);
+   console.log(a + b * c * d * e * f);
+ }
+ calc(1, 2); */
 
 //    function sayMyName (name, surname) {
 //      console.log(`My name is ${name} ${surname}`);
@@ -737,15 +660,637 @@ console.log(parseFloat(engKichikButun));//Son qanday bo'lsa shundayligicha shuni
 
 //29- UYga vaziga
 
-const adv = document.querySelectorAll('.promo__adv  img'),
- wrapper = document.querySelector('.promo__bg'),
- genre = wrapper.querySelector('.promo__genre'),
- seriesList = document.querySelector('.promo__interactive-list');
+// const adv = document.querySelectorAll('.promo__adv img'),
+//   wrapper = document.querySelector('.promo__bg'),
+//   genre = wrapper.querySelector('.promo__genre'),
+//   seriesList = document.querySelector('.promo__interactive-list');
 
- adv.forEach((item) => {
-     item.remove();
- });
+// const seriesDB = {
+//   series: [
+//     'Omar',
+//     'The Final Legacy',
+//     'Ertugrul',
+//     'Magnificent Century',
+//     'The Great Seljuks: Guardians...',
+//   ],
+// };
+// //1-) Vazifa
+// adv.forEach((item) => {
+//   item.remove();
+// });
 
- genre.textContent = 'Comediya';
+// //2-) Vazifa
+// genre.textContent = 'comediya';
 
- wrapper.style.backgroundImg = "url(img/)";
+// //3-)Vazifa
+// wrapper.style.backgroundImage = 'url("../img/1.jpg")';
+
+// //4-)Vazifa
+// seriesList.innerHTML = '';
+
+// seriesDB.series.forEach((item, idx) => {
+//      seriesList.innerHTML += `
+//        <li class="promo__interactive-item">${idx + 1} ${item}
+//          <div class="delete"></div>
+//        </li>
+//      `;
+//    });
+
+
+
+
+
+
+
+//30 Hodisalar bilan ishlash
+// const btn = document.querySelector('#btn');
+
+// btn.onclick = function () {
+//      alert('Salom sen buni qila olasan');
+// };
+
+// btn.addEventListener('click', () => {
+//      prompt('Men buni qila olaman ');
+// });
+
+// btn.addEventListener('click', () => {
+//      alert('Sen bun albatta qila olasan ');
+// });
+
+// btn.addEventListener('click', () => {
+//      alert('sen buni qila olading');
+// });
+
+
+// btn.addEventListener('click', () => {
+//      prompt('Ura men buni qila oldim ');
+// });
+
+
+// btn.addEventListener('mouseenter', () => {
+//      alert('Sen bu kodni koproq yozib korgin');
+// });
+
+// btn.addEventListener ('mouseenter', (glay) => {
+//      glay.target.remove();
+// });
+
+// btn.addEventListener('mouseenter', (okbary) => {
+//      okbary.target.remove();
+// });
+
+
+// const btn = document.querySelector('button');
+
+// btn.addEventListener('click', () => {
+//      alert('qiyin bolsada siz buni qila oldingiz ');
+// });
+
+// btn.addEventListener('click', (hohlagan) => {
+//      hohlagan.target.remove();
+// });
+
+// btn.addEventListener('mouseenter', (ok) => {
+//      console.log(ok.target);
+//      // alert('va nihoyat uddaladm');
+// });
+
+// i = 0;
+// const addElement = (evt) => {
+//      i++;
+//      if (i == 3) {
+//           btn.removeEventListener('click', addElement);
+//      }
+//      console.log(i);
+// };
+// btn.addEventListener('click', addElement);
+
+// const link = document.querySelector('a');
+
+// link.addEventListener('click', (ok) => {
+//      ok.preventDefault();
+//      alert("bugun");
+// });
+
+
+// const btnd = document.querySelectorAll('button');
+// btnd.forEach((item) => {
+//      item.addEventListener('click', () => {
+//           console.log(1);
+//      });
+// });
+
+
+
+
+
+
+
+
+
+
+//31-- Dars Navigatsiya DOM bo'yicha
+
+// console.log(document.head); headni consolga chiqarib beradi
+//  console.log(document.body); //bodyni consolga chiqarib beradi
+// console.log(document.body.childNodes);//Bodyni ichidagi hamma narsani ko'rsatadi
+// console.log(document.body.firstChild); //Bu bizga eng boshi Bodydan keyingini beradi
+// console.log(document.body.lastChild); //Bu bizga eng ohiri bodydan oldingini beradi
+// console.log(document.querySelector('#btn').parentNode);// bizga bu bodydan keyingi ona elementni chiqarib beradi {.parentNode} va yana bu codni tersak to'liq bodyni chiqarib beradi
+
+// console.log(document.querySelector('[data-current="b"]').nextElementSibling);
+// for (let node of document.body.childNodes) {
+//      if (node.nodeName == '#text') {
+//           continue;                           //Bu bizga bodydagi #textlarni olib tashlab chiqarib beradi
+//      }
+//      console.log(node);
+// };
+const seriusDB = {
+     count: 0,
+     serius: {},
+     actors: {},
+     genres: [],
+     private: false,
+     start: function () {
+          seriusDB.count = +prompt("Nechta serial ko'rdingiz", "Raqam kiriting");
+
+          while(seriusDB.count == "" ||
+          seriusDB.count == null ||
+          isNaN(seriusDB.count)
+          ){
+               seriusDB.count = prompt("Nechta serial ko'rdingiz", "");
+               }
+         },
+         rememberMySerius: function (){
+              for (let i = 0; i < 2; i++){
+                const a = prompt("Oxirgi ko'rgan serialingiz?"),
+                b = prompt("Nechi baho berasiz?");
+                if (a != null && b != null && a !="" && b !=""){
+                seriusDB.serius[a] = b;
+                console.log("done");
+              }else{
+                console.log("error");
+                i--;
+              }
+           }
+         },
+         detectLevelSerius: function(){
+          if (seriusDB.count < 5) {
+               console.log("Kam serial ko'ribsiz");
+          } else if (seriusDB.count >= 5 && seriusDB.count < 10) {
+               console.log("Siz classik tomoshabin ekansiz");
+               } else if (seriusDB.count >=10) {
+     console.log("Siz serialchi zvezda keansiz");
+     }else {
+     console.log("Error");
+          }
+     },
+      showDb: function(){
+          if(!seriusDB.private){
+               console.log(seriusDB);
+          }
+     },
+      visableDb: function () {
+          if (seriusDB.private) {
+               seriusDB.private = false;
+          }else {
+               seriusDB.private = true;
+          }
+     },
+      writeGenres: function(){
+          for (let i = 0; i <= 2; i++){
+               const genre = prompt (`Yaxshi ko'rgan janringiz ${i + 1}`);
+               if (genre == '' || genre == null) {
+                    console.log("Siz noto'g'ri ma'lumot kiritdingiz");
+                    i--;
+               } else{
+                    seriusDB.genres[i] = genre;
+               }
+          }
+          let genres = prompt ("Yaxshi ko'rgan janringizni vergul yordamida yozing")
+          .toLocaleLowerCase;
+          console.log(genres);
+          if (genres == '' || genres == null) {
+               console.log("Siz noto'g'ri ma'lumot kiritdingiz");
+               i--;
+          } else{
+               seriusDB.genres = genres.split(', ');
+               seriusDB.genres.sort();
+          }
+          seriusDB.genres.forEach((item, idx) => {
+               console.log(`Yaxshi ko'rgan janiringiz ${idx + 1} - nomi ${item}`);
+          });
+     },
+ };
+
+
+
+// startApp();
+// const seriusDb = {
+//      count: 0,
+//      series: {},
+//      actors: {},
+//      genres: [],
+//      privat: false
+//      start: function () {
+//           seriusDb.count = +prompt ("Nechta film ko'rdingiz", "");
+
+//           while (seriusDb.count == "" ||
+//           seriusDb.count == null ||
+//           isNaN(seriusDb.count)
+//           ){
+//              seriusDb.count = +prompt ("Nechta film ko'rdingiz", "");
+//           }
+//      },
+// };
+// function rememberMyOfSerius() {
+// for (let i = 0; i < 2; i++) {
+//      const a = prompt ("Ohirgi ko'rgan serialingiz ?"),
+//      b = prompt ("Nechi baho beraisz ?");
+
+//      if (a != null && b != null && a != '' && b != '') {
+//           seriusDb.series[a] = b;
+//           console.log("done");
+//      }else {
+//           console.log("Error");
+//           i--;
+//      }
+//    }
+// }
+// rememberMyOfSerius();
+
+// function detectLevelSerius (level) {
+//      if (level < 5) {
+//      console.log('Kam serial ko`ribsiz');
+// }else if (level >= 5 && level < 10 ) {
+//      console.log('Siz classik tomoshabin ekansiz');
+// }else if (level >= 10) {
+//      console.log('Siz serialchi zvezda ekansiz');
+// } else {
+//      console.log('Error');
+//   }
+// }
+// detectLevelSerius(seriusDb.count);
+
+// function showDb(hidden) {
+//      if(!hidden) {
+//           console.log(seriusDb);
+//      }
+// }
+// showDb(seriusDb.privat);
+
+// function writeGenres () {
+//      for  (let i = 0; i <= 2; i++) {
+//           const genre = prompt (`Yaxshi ko'rgan janringiz ${i + 1}`);
+//           seriusDb.genres[i] = genre;
+//      }
+// }
+// writeGenres();
+
+/* const arr =  [2, 13, 14, 25, 8,];
+arr.sort((a, b) => a - b);
+console.log(arr);
+function compareFn(a,b) {
+     return a - b;
+} */
+
+// arr.forEach (function (it, itx, ar) {//ForEach nechta parametr qabul qiladi 1 element value 2parametr index yani massiv index 3parametr element o'zini
+//      console.log(`${itx}: ${it} intro arr ${ar}`);
+// });
+// const muse = prompt("What is name long felay", "");
+// const userMuse = muse.split(", ");//So'zlarni orasini ochib berishda ishlaydi
+// userMuse.sort();//bizga alfavit bo'yicha tartiblab beradi
+// console.log(userMuse.join( ' ^ '));//So'zlarni orasini ochib
+// // for (let i = 0; i < arr.length; i++) {
+// //      console.log(arr[i]);
+// // }
+
+// for (let value in arr) {
+//      console.log(value);
+// }
+// arr.pop(7);
+// arr.push(6);
+
+// // arr.shift(1);
+// arr.unshift(1);
+// console.log(arr);
+
+
+
+
+//#6- Dars Clonlash , ES6
+
+/* let x = 10;
+let y = x;
+y = y + 5;
+console.log(x);
+console.log(y);
+
+
+let isMore = false;
+let isAge  = isMore;
+isAge = true;
+console.log(isMore);
+console.log(isAge);
+
+
+const number = {
+     x: 10,
+     y: 5
+};
+const newNumber = number;
+newNumber.x = 15;
+
+
+console.log(number);
+console.log(newNumber);
+
+function nusxaObj (obj) {
+     let objNusxa = {};
+
+     for (let key in obj) {
+          objNusxa[key] = obj[key];
+     }
+     return objNusxa;
+}
+const numbers = {
+     x: 10,
+     y: 5,
+
+};
+const addNumber = { //Xoxlagan objectni qo'shish mumkin
+     z: "zdsdvsdvv"
+};
+
+// const newNumbers = nusxaObj(numbers);
+
+// newNumbers.x = 15;
+// newNumbers.z.a = 12;
+
+// console.log(newNumbers);
+// console.log(numbers);
+
+
+const allNumbers = Object.assign( numbers, addNumber);
+
+console.log(allNumbers); */
+
+
+// const arr = [1, 2, 3];
+// const numbers = arr.slice();// copyni olib beradi
+
+// numbers[1] = 'Hojiakbar';
+
+// console.log(numbers);
+// console.log(arr);
+
+
+
+//SPREAD massivni yangi massivga aylantrib beradi spread operatorining belgisi 3ta nuqta hisoblanadi ...
+/* const chelsea = ['Salah', 'Mana'];
+const navbahor = ['Ronaldo'];
+
+const mixPlayer = [...chelsea, ...navbahor];
+
+console.log(mixPlayer );*/
+
+
+
+// const calc = [1, 2, 3];
+// function logger(x, y, z) {
+//      console.log(x + (y * z));
+// }
+// logger(...calc);
+
+
+/* const raqam = {
+     x: 10,
+     y: 15
+};
+const newRaqam = { ...raqam };
+console.log(raqam);
+console.log(newRaqam); */
+
+
+
+// #24 OOP assoslari objectga yo'naltirilgan
+
+// const firstName = 'Usman';
+// const lot = new String(firstName);
+// console.log(firstName);
+// console.log(lot);
+
+// const car = {
+//      motor: 'X',
+//      color: 'red',
+//      isAirbag: true
+// };
+
+// const gm = {
+//      isAirbag: false
+// };
+
+// Object.setPrototypeOf(gm, car);
+// const bmw = Object.create(car);
+// console.log(bmw);
+// gm.__proto__ = car;
+// console.log(gm);
+
+
+// function edu (subject , callback) {
+//      console.log(`I wanna teach ${subject}`);
+//      callback();
+// }
+// function done () {
+//      console.log("That's great");
+// }
+// edu("javascript", done);
+
+
+// function first (cb) {
+//      setTimeout(() => {
+//           console.log(1);
+//           cb();
+//      }, 1000);
+// }
+// function second () {
+//      console.log(2);
+// }
+// first(second);
+
+
+//20 Oblect Destruptizatsiya
+// const theif = {
+//      jacket: "black",
+//      height: 1.7,
+//      colors: {
+//           hair: "red",
+//           style: "curley"
+//      },
+//      howOut: function (){
+//           console.log("Derazadan qochdi iplos");
+//      }
+// };
+// theif.howOut();
+// const {hair, style} = theif.colors;// shu narsani ditrbtizatsiya deyiladi
+// const hair = theif.colors.hair;
+// const style = theif.colors.style;
+// console.log(hair);
+// console.log(style);
+// console.log(theif["colors"]["style"]);
+
+// console.log(Object.keys(theif));
+// for (let key in theif) {
+//      if (typeof theif[key] === "object") {
+//           for (let i in theif[key]) {
+//      console.log(`Ustki kiyimi ${key} rangi ${theif[key][i]}`);
+// }
+//      }else {
+//           console.log(`Ustki kiyimi ${key} rangi ${theif[key]}`);
+//      }
+// }
+
+
+
+
+
+// delete theif.jacket;
+// const object1 = {
+//      a: 'somestring',
+//      b: 42,
+//      c: false
+//    };
+
+//    console.log(Object.keys(object1));
+   // Expected output: Array ["a", "b", "c"]
+
+
+
+
+
+/* function sayHelloBro(text) {
+     console.log(text);
+}
+sayHelloBro("Salom funsiya"); */
+// function calc (a, b) {
+//      console.log(a + b);
+// }
+// calc(10, 15);
+// let sayName = 30;
+// function myName (name , surname) {
+//      sayName = 20;
+//      console.log(`My name is ${name} ${surname}`);
+
+// }
+// myName("Khojiakbar","Usmonov");
+// console.log(sayName);
+
+
+//funcksion decloration funksiyadan oldin chaqirib qo'ysa bo'ladi va bu hech qanday hatoni ko'rsatmaydi
+/* function calc (a, b) {
+     return a + b;
+}
+const saybro = calc(10, 15);
+
+console.log(saybro); */
+
+
+//Function expression funksiya yozib bo'lingadan keyin chaqirish kerak
+
+// const logger = function () {
+//      console.log("Hello World");
+// };
+// logger();
+
+
+//Arrow function codlarni qisqa va soddalashtirib beradi => bu belgi oldida RETURN PAYDO BO'LADI
+/* const calc = (a, b) => a + b;
+console.log(calc(10 , 5)); */
+
+//Metod -ni xardoim funksiya singari chaqirib qo'yish kerak
+
+// const salom = "Hello World";
+// console.log(salom.indexOf("W"));
+// Proprtiy Xususiyat valui
+
+// const woldd = "string";
+// console.log(woldd.bold("s"));
+
+// const hotText = "MDN";
+// const url = "https://developer.mozilla.org/";
+// console.log(`click to return to ${hotText.link(url)}`);
+// const user = "Uzim";
+// console.log(user.length);
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.length);
+
+/* const user = "Hojiakbar";
+console.log(user[5]); */
+
+
+// myName ("Hojiakbar", "Usmonov");
+//SHartli operator
+// const age = prompt("Yoshingizni kiriting???", "");
+// if (age >= 25) {
+//      console.log("Ujasni film");
+// }else if (age >= 18) {
+//      console.log("Urush film");
+// }else {
+//      console.log("Multfilm");
+// }
+
+//Ternary operator
+//  (age >= 25) ? console.log("Ujasni filim") : console.log("Multfilm");
+
+
+// Swich case
+// const color = "red";
+// switch (color) {
+//      case "red":
+//           console.log("tohta darmayid");
+//           break;
+//      case "yellow":
+//           console.log("gazini bos yawwamagur");
+//           break;
+//      case "green":
+//           console.log("Qizilga tushding");
+//           break;
+//      default:
+//           console.log("Yedingmi bola");
+//           break;
+// }
+
+// console.log(isAge || isMore || isClose);
+
+// function A() { console.log('called A'); return false; }
+// function B() { console.log('called B'); return true; }
+// function C() { console.log('called C'); return true; }
+
+// console.log(C() || B() && A());
+
+// console.log(2 + 2 * 2 !== 6);
+//FIRST
+// let sertNum = 1;
+// while (sertNum <= 10) {
+//      console.log(sertNum);
+//      sertNum++;
+// }
+
+//Second
+// do{
+//      console.log(sertNum);
+//      sertNum++;
+// }while(sertNum <= 10);
+
+// for (let i = 1; i <= 10; i++){
+//      console.log(sertNum);
+//      sertNum++;
+// }
+// for (let i = 1; i <= 10; i++){
+//      if ( i === 8) {
+//      // break;
+//      continue;
+// }
+// console.log(i);
+// }
