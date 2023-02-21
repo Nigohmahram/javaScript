@@ -805,147 +805,289 @@ console.log(parseFloat(engKichikButun));//Son qanday bo'lsa shundayligicha shuni
 //      }
 //      console.log(node);
 // };
-const seriusDB = {
+
+// let numberOfSerius ;
+// function startApp() {
+//      numberOfSerius = +prompt("Nechta serial ko'rdingiz?", '');
+
+//      while (numberOfSerius == '' ||
+//      numberOfSerius == null ||
+//      isNaN (numberOfSerius)
+//      ){
+//           numberOfSerius = +prompt ("nechta serial ko'rdingiz?", '');
+//      }
+// }
+
+
+/* const seriusDb = {
      count: 0,
-     serius: {},
+     series: {},
      actors: {},
      genres: [],
-     private: false,
-     start: function () {
-          seriusDB.count = +prompt("Nechta serial ko'rdingiz", "Raqam kiriting");
+     privat: false,
+     start: () => {
+          seriusDb.count = +prompt("Nechta serial ko'rdingiz?", '');
 
-          while(seriusDB.count == "" ||
-          seriusDB.count == null ||
-          isNaN(seriusDB.count)
-          ){
-               seriusDB.count = prompt("Nechta serial ko'rdingiz", "");
-               }
-         },
-         rememberMySerius: function (){
-              for (let i = 0; i < 2; i++){
-                const a = prompt("Oxirgi ko'rgan serialingiz?"),
-                b = prompt("Nechi baho berasiz?");
-                if (a != null && b != null && a !="" && b !=""){
-                seriusDB.serius[a] = b;
-                console.log("done");
-              }else{
-                console.log("error");
-                i--;
-              }
-           }
-         },
-         detectLevelSerius: function(){
-          if (seriusDB.count < 5) {
-               console.log("Kam serial ko'ribsiz");
-          } else if (seriusDB.count >= 5 && seriusDB.count < 10) {
-               console.log("Siz classik tomoshabin ekansiz");
-               } else if (seriusDB.count >=10) {
-     console.log("Siz serialchi zvezda keansiz");
-     }else {
-     console.log("Error");
-          }
+     while (seriusDb.count == '' ||
+     seriusDb.count == null ||
+     isNaN (seriusDb.count)
+     ){
+          seriusDb.count = +prompt ("nechta serial ko'rdingiz?", '');
+     }
      },
-      showDb: function(){
-          if(!seriusDB.private){
-               console.log(seriusDB);
-          }
-     },
-      visableDb: function () {
-          if (seriusDB.private) {
-               seriusDB.private = false;
-          }else {
-               seriusDB.private = true;
-          }
-     },
-      writeGenres: function(){
-          for (let i = 0; i <= 2; i++){
-               const genre = prompt (`Yaxshi ko'rgan janringiz ${i + 1}`);
-               if (genre == '' || genre == null) {
-                    console.log("Siz noto'g'ri ma'lumot kiritdingiz");
+     rememberMyOfSerius:() => {
+          for (let i = 0; i < 2; i++) {
+               const a = prompt ("Ohirgi ko'rgan serialingiz ?"),
+               b = prompt ("Nechi baho beraisz ?");
+
+               if (a != null && b != null && a != '' && b != '') {
+                    seriusDb.series[a] = b;
+                    console.log("done");
+               }else {
+                    console.log("Error");
                     i--;
-               } else{
-                    seriusDB.genres[i] = genre;
                }
-          }
-          let genres = prompt ("Yaxshi ko'rgan janringizni vergul yordamida yozing")
-          .toLocaleLowerCase;
-          console.log(genres);
-          if (genres == '' || genres == null) {
-               console.log("Siz noto'g'ri ma'lumot kiritdingiz");
-               i--;
-          } else{
-               seriusDB.genres = genres.split(', ');
-               seriusDB.genres.sort();
-          }
-          seriusDB.genres.forEach((item, idx) => {
-               console.log(`Yaxshi ko'rgan janiringiz ${idx + 1} - nomi ${item}`);
-          });
-     },
- };
+             }
+          },
+          detectLevelSerius: (level) => {
+               if (level < 5) {
+               console.log('Kam serial ko`ribsiz');
+          }else if (level >= 5 && level < 10 ) {
+               console.log('Siz classik tomoshabin ekansiz');
+          }else if (level >= 10) {
+               console.log('Siz serialchi zvezda ekansiz');
+          }else {
+               console.log('Error');
+            }
+          },
+          showDb:() => {
+               if(!seriusDb.privat) {
+                    console.log(seriusDb);
+               }
+          },
+          visibleDb: () => {
+               if (seriusDb.privat) {
+                    seriusDb.privat = false;
+               }else {
+                    seriusDb.privat = true;
+               }
+          },
+          writeGenres: () => {
+               // for  (let i = 0; i <= 2; i++) {
+               //      const genre = prompt (`Yaxshi ko'rgan janringiz ${i + 1}`);
+               //      if (genre == '' || genre == null) {
+               //           console.log("Siz notogri malumot kiritdingiz");
+               //           i--;
+               //      }else {
+               //           seriusDb.genres[i] = genre;
+               //      }
+               //      seriusDb.genres[i] = genre;
+               // }
+               let genres = prompt(
+                    "Yaxshi ko'rgan janringizni vergul yordamida yozing"
+                  ).toLowerCase();
+
+                  if (genres === '' || genres === null) {
+                    console.log("Siz notog'ri ma'lumot kiritdingiz");
+                    i--;
+                  } else {
+                    seriusDb.genres = genres.split(', ');
+                    seriusDb.genres.sort();
+                  }
+
+     seriusDb.genres.forEach((item, index) => {
+     console.log(`Sizni yaxshi korgan janiringiz ${index + 1} - nomi ${item}`);
+     });
+          },
+}; */
+
+//# 26 Dynamic typing
+//#27. DOM bilan ishlash
+
+//Eski oldingi ususli
+/* const box = document.getElementById ('box');
+// console.log(box);
+
+const buttons = document.getElementsByTagName('button')[0];
+// console.log(buttons);
 
 
+const circles = document.getElementsByClassName('app');
+// console.log(circles);
 
-// startApp();
-// const seriusDb = {
-//      count: 0,
-//      series: {},
-//      actors: {},
-//      genres: [],
-//      privat: false
-//      start: function () {
-//           seriusDb.count = +prompt ("Nechta film ko'rdingiz", "");
 
-//           while (seriusDb.count == "" ||
-//           seriusDb.count == null ||
-//           isNaN(seriusDb.count)
-//           ){
-//              seriusDb.count = +prompt ("Nechta film ko'rdingiz", "");
-//           }
-//      },
+//Yangi usuli
+// const hearts = document.querySelector('.heart');
+// console.log(hearts);
+
+const wrapper = document.querySelectorAll('.wrapper');
+console.log(wrapper);
+
+const hearts = document.querySelector('.heart')[1];
+// hearts.forEach((item) => {
+//      console.log(item);
+// }); */
+
+// const box = document.querySelector('#box');
+// const buttons = document.querySelectorAll('button');
+// const circles = document.querySelectorAll('.circle');
+// const hearts = document.querySelectorAll('.heart');
+// const circleWrapper = document.querySelector('.circle__wrapper');
+// const wrappers = document.querySelector('.wrapper');
+
+
+// box.style.backgroundColor = 'rgba(50,50,500, 0.2)';
+// box.style.height = '200px';
+// box.style.width = '200px';
+// box.style.borderRadius = '50px';
+
+
+// buttons[2].style.backgroundColor = 'rgba(10,10,300,0.3)';
+// buttons[2].style.height = '100px';
+// buttons[2].style.width = '100px';
+// buttons[2].style.borderRadius = '50px';
+
+
+// circles[1].style.cssText = 'background-color: aqua; width: 100px; height: 50px; border-radius: 50px';
+
+// for ( i = 0; i < hearts.length; i++) {
+//      hearts[i].style.backgroundColor = "black";
+// }
+
+// hearts.forEach(item => {
+//      item.style.backgroundColor = 'silver';
+// });
+
+// const btn = document.createElement('button');
+
+// document.body.append(btn);
+
+
+// const myCircle = document.createElement('div');
+// myCircle.classList.add('circle');
+// circleWrapper.append(myCircle);
+// // myCircle.innerHTML = 'E';
+// myCircle.innerText = 'E';
+// // circleWrapper.after(myCircle);
+// // circles[0].after(myCircle);
+// // circles[0].before(myCircle);
+// // circles[0].replaceWith(myCircle);
+// // circles[0].remove(myCircle);
+// // circles[0].replaceWith(myCircle);
+
+// const myWrappers = document.createElement('div');
+// myWrappers.classList.add('heart');
+// wrappers.append(myWrappers);
+// myWrappers.innerHTML = 'E';
+
+//#29. Amaliyot, uyga vazifa. DOM
+document.addEventListener('DOMContentLoaded', () => {
+const adv = document.querySelectorAll('.promo__adv img'),
+ promoBg = document.querySelector('.promo__bg'),
+ promoGenre =  promoBg.querySelector('.promo__genre'),
+ promoInteractiveList = document.querySelector('.promo__interactive-list'),
+ addFrom = document.querySelector('form.add'),
+ inputVal = addFrom.querySelector('.adding__input'),
+ checkbox = addFrom.querySelector("[type='checkbox']");
+
+//--1
+     adv.forEach((item) => {
+       item.remove();
+     });
+//--2
+promoGenre.textContent = 'Comediya';
+
+//--3
+promoBg.style.backgroundImage = 'url("../img/1.jpg")';
+
+
+const seriesDB = {
+     serius: [
+          'Omar',
+          'The Final Legacy',
+          'Ertugrul',
+          'Magnificent Century',
+          'The Great Seljuks: Guardiens ..',
+     ],
+};
+promoInteractiveList.innerHTML = '';
+
+seriesDB.serius.forEach((item, idx) => {
+  promoInteractiveList.innerHTML += `
+    <li class="promo__interactive-item">${idx + 1} ${item}
+      <div class="delete"></div>
+    </li>
+  `;
+});
+});
+
+// const btn = document.querySelector('#btn');
+// const overlay = document.querySelector('.overlay');
+
+// btn.onclick = function() {
+//      alert('fafsdfsd');//Eski usuli va bundan oldinlari juda ko'p foydalanishgan
 // };
-// function rememberMyOfSerius() {
-// for (let i = 0; i < 2; i++) {
-//      const a = prompt ("Ohirgi ko'rgan serialingiz ?"),
-//      b = prompt ("Nechi baho beraisz ?");
+// btn.addEventListener('click', () => {
+//      alert('dfdfbdfbdfbdfbdfb');
+// });
 
-//      if (a != null && b != null && a != '' && b != '') {
-//           seriusDb.series[a] = b;
-//           console.log("done");
-//      }else {
-//           console.log("Error");
-//           i--;
+// btn.addEventListener('mouseenter', (event) => {
+//      // console.log(event.target);
+//      event.target.remove();
+// });
+// let i = 0;
+// const addElement = (evt) => {
+//      i++;
+//      if (i == 3) {
+//           btn.removeEventListener('click', addElement);
+
 //      }
-//    }
-// }
-// rememberMyOfSerius();
+//      console.log(i);
+// };
 
-// function detectLevelSerius (level) {
-//      if (level < 5) {
-//      console.log('Kam serial ko`ribsiz');
-// }else if (level >= 5 && level < 10 ) {
-//      console.log('Siz classik tomoshabin ekansiz');
-// }else if (level >= 10) {
-//      console.log('Siz serialchi zvezda ekansiz');
-// } else {
-//      console.log('Error');
-//   }
-// }
-// detectLevelSerius(seriusDb.count);
+// const cb = (e) => {
+//      console.log(e.currentTarget);
+// };
 
-// function showDb(hidden) {
-//      if(!hidden) {
-//           console.log(seriusDb);
-//      }
-// }
-// showDb(seriusDb.privat);
+// btn.addEventListener('click',cb);
+// overlay.addEventListener('click',cb);
 
-// function writeGenres () {
-//      for  (let i = 0; i <= 2; i++) {
-//           const genre = prompt (`Yaxshi ko'rgan janringiz ${i + 1}`);
-//           seriusDb.genres[i] = genre;
-//      }
-// }
-// writeGenres();
+// const link = document.querySelector('a');
+// link.addEventListener('click', (event) => {
+//      event.preventDefault();
+//      alert('Link');
+// });
+
+// const btns = document.querySelectorAll('button');
+
+// btns.forEach ((item)   => {
+//      item.addEventListener('click', () => {
+//           console.log(1);
+//      });
+// });
+// const logger = () => {
+//      console.log(1);
+// };
+// btns.forEach ((item)   => {
+//      item.addEventListener('click', logger, {once: true} );
+// });
+
+// console.log(document.body);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* const arr =  [2, 13, 14, 25, 8,];
 arr.sort((a, b) => a - b);
@@ -978,7 +1120,7 @@ function compareFn(a,b) {
 
 
 
-//#6- Dars Clonlash , ES6
+//#22- Dars Clonlash , ES6
 
 /* let x = 10;
 let y = x;
